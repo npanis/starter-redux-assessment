@@ -13,7 +13,8 @@ const options = {
     // Task 1: Create an `addPhoto()` case reducer that adds a photo to state.photos. 
     // Task 1 Hint: You can use state.photos.unshift()
     // `unshift()` documentation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
-    //Limit: Adding and Removing might cause the same id. This might need to be changed to a unique ID in the future.
+    
+    //Limit: Adding and Removing might cause having the same id. This might need to be changed to a unique ID in the future.
     addPhoto: (state, action) => {
       state.photos.unshift(
         { id: state.photos.length + 1, caption: action.payload.caption, imageUrl: action.payload.imageUrl  }
